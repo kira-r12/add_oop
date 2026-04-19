@@ -45,7 +45,11 @@ public class Inventory<T>: IEnumerable<T> where T: Item
         return values.GetEnumerator();
     }
     IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
+    {
+        return GetEnumerator();
+    }
+    public void SortByRarity()
+    {
+        values.Sort();
+    }
 }

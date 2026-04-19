@@ -4,6 +4,6 @@ public class Armor: Item
 
     public override void Use(Hero hero)
     {
-        hero.Defence += 15;
+        hero.Defense += 15;
     }
 }
